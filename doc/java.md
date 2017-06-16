@@ -1,16 +1,16 @@
-## Deploy a sample Java app 
-### Technology involved:
+# Create and deploy Java application on Cloud Foundry
+## Technology involved:
 * Latest Java JDK
 * Eclipse IDE for Java EE Developers Luna
 * IBM Eclipse Tools for Bluemix. 
 * The Liberty profile V8.5.5.5 (or later) runtime. You can either install it directly or download a Liberty profile installation from within Eclipse. If given a choice, select web profile.
-### Steps:
-#### 1. [Download the sample Java web app](http://www.ibm.com/developerworks/apps/download/index.jsp?contentid=1010776&amp;filename=javatutorial1_code_0803.zip&amp;method=http&amp;locale)    
+## Steps:
+### 1. [Download the sample Java web app](http://www.ibm.com/developerworks/apps/download/index.jsp?contentid=1010776&amp;filename=javatutorial1_code_0803.zip&amp;method=http&amp;locale)    
 Save javatutorial1_code_0803.zip to your computer and extract its contents, which consists of:    
 * **lauren.war**: A standard Java EE WAR file, containing the servlets, JSP, and web.xml file that constitute the application
 * **lllproject.zip**: An Eclipse project archive, containing the complete Eclipse project for this tutorial   
 
-#### 2. Deploy the WAR file to Bluemix.  
+### 2. Deploy the WAR file to Bluemix.  
 You can deploy the lauren.war file directly to JEE-compatible servers such as a Liberty profile server running either on your own computer or in the Bluemix cloud. 
 
 Make sure you are logged into your Bluemix account.(To check, run <kbd class="ph userinput">bx login</kbd>)
@@ -28,7 +28,7 @@ The command that you just ran will:
 
 Open **https://<b><i>app-name</i></b>.mybluemix.net/** in your browser to try out the app — a simple web store called Lauren's Lovely Landscapes. The store currently sells three prints; each print's page displays the associated name, image, and price.
 
-#### 3. Import the app into your Eclipse workspace  
+### 3. Import the app into your Eclipse workspace  
 Starting with this step, you'll begin to examine and modify the code. The Eclipse IDE makes it easy to work with the code and navigate the big project directories tree when you develop Java web applications.
 * Start your Eclipse IDE and select **File > Import**. Then select **General > Existing Projects into Workspace**:
 
@@ -43,7 +43,7 @@ Starting with this step, you'll begin to examine and modify the code. The Eclips
 Click **Finish**.   
 he LaurenLandscapesJava project is now imported into your workspace. You can see its structure in the Enterprise Explorer pane on the left. The next step familiarizes you with the project and the code.   
 
-#### 4. Examine the code structure.  
+### 4. Examine the code structure.  
 With your project open in Eclipse, take a look at the Enterprise Explorer pane on the left:
 <img src="../img/4.1.png" align="left" width="40%"  >
 <br clear="all" />
@@ -79,7 +79,7 @@ If you examine one of the JSP files — alaska.jsp, for instance — you can see
 ...
 ```
 
-#### 5. Run the app on the Liberty profile with Eclipse.  
+### 5. Run the app on the Liberty profile with Eclipse.  
 You're now ready to run the app locally on an instance of the Liberty profile that's managed by Eclipse:
 
 Select the project in the Enterprise Explorer, right-click, and select **RunAs > Run on Server...** to open a server-selection dialog box.
@@ -98,7 +98,7 @@ The selection you just made starts the local instance of the Liberty profile, lo
 
 Try out this instance of the application and see if you notice any difference from the Bluemix-hosted one. Because you're looking at the same app, produced with the same code, there should be no noticeable differences between the two.
 
-#### 6. Run JUnit tests
+### 6. Run JUnit tests
 It's good Java coding practice to write unit tests for your classes.
 
 The WebsiteTitle class comes with two unit tests. To run the tests, follow this sequence:
@@ -111,7 +111,7 @@ You can see both tests being run. Green status indicates that all unit tests wer
 <img src="../img/6.1.png" align="left" width="60%"  >
 <br clear="all" />
 
-#### 7. Modify the code and rerun the app
+### 7. Modify the code and rerun the app
 In this step, you'll modify the price of a print and see it updated on the locally running website right away.
 * In the Enterprise Explorer in Eclipse, click the antarctica.jsp file and look for the price in the source code.
 * Change the price from 100.00 to 99.99 and save the file. The changed code should look like: 
@@ -122,7 +122,7 @@ In this step, you'll modify the price of a print and see it updated on the local
 * Use the built-in browser in Eclipse to browse to the app.
 * Select the Antarctica print and note the print's changed price.
 
-#### 8. Rerun the JUnit tests
+### 8. Rerun the JUnit tests
 To ensure that your code changes don't break anything, get into the habit of running unit tests every time an app is modified.
 
 To rerun the unit tests:
@@ -133,7 +133,7 @@ To rerun the unit tests:
 
 Once again, you see the green status, indicating that all unit tests were successful.
 
-#### 9. Deploy the changed code to Bluemix
+### 9. Deploy the changed code to Bluemix
 To let everyone on the Internet know about the Antarctica print's new price, you'll deploy the changed app to Bluemix. In this step, you see an even easier way to deploy the project to Bluemix than using a WAR file — namely, using the IBM Eclipse Tools for Bluemix to package up your Liberty profile server instance and deploy it on Bluemix:
 
 * In Eclipse, stop the local Liberty profile server instance by clicking the square red button. Now you can see the stopped status associated with the server: 
