@@ -59,7 +59,7 @@ If you examine one of the JSP files — alaska.jsp, for instance — you can see
 ...
 ```
 
-### 1.3 Create and bind a service to the application
+### 1.3 Create and bind a DB service to the application <a name="1.3">
 You're now ready to run the app locally on an instance of the Liberty profile that's managed by Eclipse:
 
 Select the project in the Enterprise Explorer, right-click, and select **RunAs > Run on Server...** to open a server-selection dialog box.
@@ -78,7 +78,7 @@ The selection you just made starts the local instance of the Liberty profile, lo
 
 Try out this instance of the application and see if you notice any difference from the Bluemix-hosted one. Because you're looking at the same app, produced with the same code, there should be no noticeable differences between the two.
 
-### 1.4 Run JUnit tests
+### 1.4 Run JUnit tests <a name="1.4">
 It's good Java coding practice to write unit tests for your classes.
 
 The WebsiteTitle class comes with two unit tests. To run the tests, follow this sequence:
@@ -91,8 +91,8 @@ You can see both tests being run. Green status indicates that all unit tests wer
 <img src="../img/6.1.png" align="left" width="60%"  >
 <br clear="all" />
 
-# Deploy your Java Application 
-### 2.1 As an app
+# Deploy your Java Application <a name="2">
+### 2.1 Deploy as an app <a name="2.1">
 In this step, you'll modify the price of a print and see it updated on the locally running website right away.
 * In the Enterprise Explorer in Eclipse, click the antarctica.jsp file and look for the price in the source code.
 * Change the price from 100.00 to 99.99 and save the file. The changed code should look like: 
@@ -103,7 +103,7 @@ In this step, you'll modify the price of a print and see it updated on the local
 * Use the built-in browser in Eclipse to browse to the app.
 * Select the Antarctica print and note the print's changed price.
 
-### 2.2 Using Diego
+### 2.2 Deploy with Diego <a name="2.2">
 To ensure that your code changes don't break anything, get into the habit of running unit tests every time an app is modified.
 
 To rerun the unit tests:
