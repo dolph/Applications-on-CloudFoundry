@@ -91,7 +91,7 @@ You can see both tests being run. Green status indicates that all unit tests wer
 <img src="../img/6.1.png" align="left" width="60%"  >
 <br clear="all" />
 
-# Deploy your Java Application <a name="2">
+# 2.Deploy your Java Application <a name="2">
 ### 2.1 Deploy as an app <a name="2.1">
 In this step, you'll modify the price of a print and see it updated on the locally running website right away.
 * In the Enterprise Explorer in Eclipse, click the antarctica.jsp file and look for the price in the source code.
