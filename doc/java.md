@@ -5,10 +5,10 @@
 * IBM Eclipse Tools for Bluemix. 
 * The Liberty profile V8.5.5.5 (or later) runtime. You can either install it directly or download a Liberty profile installation from within Eclipse. If given a choice, select web profile.
 ## Steps:
-## 1. Create And Modify your java application
+## 1. Create And Modify your java application <a name="1">
 The command that you just ran will: 
 
-### 1.1 Import the app into your Eclipse workspace  
+### 1.1 Import the app into your Eclipse workspace  <a name="1.1">
 Starting with this step, you'll begin to examine and modify the code. The Eclipse IDE makes it easy to work with the code and navigate the big project directories tree when you develop Java web applications.
 * Start your Eclipse IDE and select **File > Import**. Then select **General > Existing Projects into Workspace**:
 
@@ -23,7 +23,7 @@ Starting with this step, you'll begin to examine and modify the code. The Eclips
 Click **Finish**.   
 he LaurenLandscapesJava project is now imported into your workspace. You can see its structure in the Enterprise Explorer pane on the left. The next step familiarizes you with the project and the code.   
 
-### 1.2 Modify the code  
+### 1.2 Modify the code  <a name="1.2">
 With your project open in Eclipse, take a look at the Enterprise Explorer pane on the left:
 <img src="../img/4.1.png" align="left" width="40%"  >
 <br clear="all" />
