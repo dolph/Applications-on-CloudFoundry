@@ -2,9 +2,9 @@
 IBM Bluemix is where enterprise developers build, run, scale, and manage applications. Ready to start creating your own apps on Bluemix? This tutorial walks you through the steps for hosting you application. We will go through the basic steps to launch Java, Node and PHP applications. You can pick the language you are comfortable with to go through the steps. After that, we will consume the services provided by Bluemix.
 ## Scenarios
 * **[Create and deploy Java application on Cloud Foundry](doc/java.md)**
-* 1.Create And Modify your java application
-  * 1.1 Import the app into your Eclipse workspace
-  * 1.2 Modify the code
+* 1.[Create And Modify your java application](doc/java.md#1)
+  * [1.1 Import the app into your Eclipse workspace](doc/java.md#1.1)
+  * [1.2 Modify the code](doc/java.md#1.2)
   * 1.3 Create and bind a DB service to the application
   * 1.4 Run JUnit tests
 * 2.Deploy your Java Application
