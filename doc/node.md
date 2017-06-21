@@ -1,9 +1,9 @@
-## Deploy a sample JS app 
-### Technology involved:
+# Deploy a sample Node app 
+## Technology involved:
 [Node.js](http://nodejs.org/download/) 0.12.6 or later   
 A text editor, preferably one with JavaScript syntax highlighting, such as Sublime Text (available in a free trial version) or an open source editor such as Atom.
 
-#### 1.[Download the code](http://www.ibm.com/developerworks/apps/download/index.jsp?contentid=1013070&filename=nodejstutorial1.zip&method=http&locale=) for the sample Node.js web app, nodejstutorial1.zip.
+### 1. Get the code
 
 Save nodejstutorial1.zip to your computer and extract its contents, which consists of the following files and directories:
 * **app.js**, the main executable of the app, starts the Express server that handles web requests.
@@ -13,7 +13,7 @@ Save nodejstutorial1.zip to your computer and extract its contents, which consis
 * **public** is a directory that contains all the static assets of the app, which can include CSS, images, and client-side JavaScript code that runs on the browser.
 * **test** is a directory that contains unit tests for the websiteTitle module.
 
-#### 2. Deploy the app to Bluemix
+### 2. Deploy the app to Bluemix
 
 This app, like most Node.js web apps, can be deployed immediately to Bluemix with no additional modification or configuration. You'll deploy it now to Bluemix:   
 Make sure you are logged into your Bluemix account.(To check, run <kbd class="ph userinput">bx login</kbd>)
@@ -30,7 +30,7 @@ The command that you just ran will:
 
 Open **https://<b><i>app-name</i></b>.mybluemix.net/** in your browser to try out the app — a simple web store called Lauren's Lovely Landscapes. The store currently sells three prints; each print's page displays the associated name, image, and price.
 
-#### 3. Examine the code structure
+### 3. Create and Bind a DB service
 Starting with this step, you'll begin to examine and modify the code. A syntax-highlighting editor with multiple-tabs support makes it much easier to work with the multiple JavaScript and template source code files.
 This diagram shows how the app works:
 
@@ -69,7 +69,7 @@ app.listen(appEnv.port, appEnv.bind, function() {
 ...
 }
 ```
-#### 4. Run the app on your computer
+### 4. Modify the code to connect to db
 * At the root directory of your app, run:
 ```
 npm install
@@ -91,7 +91,7 @@ At the command console, note the port that the Express server is running on (htt
 * Point a browser to the Express server at http://localhost:port_number
 * Try out this instance of the application and see if you notice any difference from the Bluemix-hosted one. Because you're looking at the same app, produced with the same code, there should be no noticeable differences between the two.
 
-#### 5. Run unit tests
+### 5. Run unit tests
 It's good Node.js coding practice to write unit tests for your modules.
 
 * If you don't already have the mocha unit-testing framework installed on your system, run this command to install it:
@@ -107,7 +107,7 @@ You can see both tests being run. In the results printed to your screen, a green
 <img src="../img/n5-1.png" align="left" width="40%"  >
 <br clear="all" />
 
-#### 6. Modify the code and rerun the app
+## 2 Deployment
 
 In this step, you'll modify the price of a print and see it updated on the locally running website right away.
 * In your text editor, open up the antarctica.jade file and look for the price in the source code.
@@ -122,7 +122,7 @@ node app.js
 * Point a browser to the Express server
 * Select the Antarctica print and note the print's changed price.
 
-#### 7. Rerun the unit tests
+### 2.1 Deploy as an app
 
 To ensure that your code changes don't break anything, get into the habit of running unit tests every time an app is modified.
 
@@ -130,7 +130,7 @@ Rerun the unit tests with the mocha command. Once again, in the screen output yo
 
 When you develop Node.js code in a team environment, you want to run all unit tests every single time you commit (modify and contribute) your code to the team's repository. Bluemix offers DevOps services that can be configured to run the unit tests automatically as part of the workflow to build the project. You'll learn much more about DevOps services in the next tutorial in this series.
 
-#### 8. Deploy the changed code to Bluemix
+### 2.2 Deploy as Docker image on Diego
 
 To let everyone on the Internet know about the Antarctica print's new price, you'll deploy the changed app to Bluemix.
 
