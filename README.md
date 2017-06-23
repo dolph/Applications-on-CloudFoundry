@@ -8,11 +8,21 @@ IBM Bluemix is where enterprise developers build, run, scale, and manage applica
   * [1.3 Create and bind a DB service to the application](doc/java.md#1.3)
   * [1.4 Run JUnit tests](doc/java.md#1.4)
 * [2.Deploy your Java Application](doc/java.md#2)
-  * [2.1 Deploy as an app](doc/java.md#2.1)
-  * [2.2 Deploy Using Diego](doc/java.md#2.2)
+  * [2.1 Deploy as a .war app](doc/java.md#2.1)
+  * [2.2 Deploy as docker image using Diego](doc/java.md#2.2)
+  * [2.3 Add Zipkin to docker image](doc/java.md#2.2)
   
 ### [Create and deploy Node application on Cloud Foundry](doc/node.md)
-
+* [1.Create And Modify your Node application](doc/node.md#1)
+  * [1.1 Try out the code](doc/node.md#1.1)
+  * [1.2 Create and bind a DB service to the application](doc/node.md#1.2)
+  * [1.3 Two ways to modify the code to access DB](doc/node.md#1.3)
+  * [1.4 Run the code](doc/node.md#1.4)
+* [2.Deploy your Node Application](doc/node.md#2)
+  * [2.1 Deploy as an app](doc/node.md#2.1)
+  * [2.2 Deploy as docker image using Diego](doc/node.md#2.2)
+  * [2.3 Add Zipkin to docker](doc/node.md#2.2)
+  
 ## Included components
 IBM Bluemix
 Cloud Foundry
