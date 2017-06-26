@@ -1,5 +1,7 @@
-# Applications-on-CloudFoundry
+# Deploy your applications on CloudFoundry and Diego
+
 IBM Bluemix is where enterprise developers build, run, scale, and manage applications. Ready to start creating your own apps on Bluemix? This tutorial walks you through the steps for hosting you application. We will go through the basic steps to launch Java, Node and PHP applications. You can pick the language you are comfortable with to go through the steps. After that, we will consume the services provided by Bluemix.
+
 ## Scenarios
 ### [Create and deploy Java application on Cloud Foundry](doc/java.md)
 * [1.Create And Modify your java application](doc/java.md#1)
