@@ -13,7 +13,7 @@ IBM Bluemix is where enterprise developers build, run, scale, and manage applica
   * [2.1 Deploy as a .war app](doc/java.md#2.1)
   * [2.2 Deploy as docker image using Diego](doc/java.md#2.2)
   * [2.3 Add Zipkin to docker image](doc/java.md#2.2)
-  
+
 ### [Create and deploy Node application on Cloud Foundry](doc/node.md)
 * [1.Create And Modify your Node application](doc/node.md#1)
   * [1.1 Try out the code](doc/node.md#1.1)
@@ -24,15 +24,15 @@ IBM Bluemix is where enterprise developers build, run, scale, and manage applica
   * [2.1 Deploy as an app](doc/node.md#2.1)
   * [2.2 Deploy as docker image using Diego](doc/node.md#2.2)
   * [2.3 Add Zipkin to docker](doc/node.md#2.2)
-  
+
 ## Included components
 IBM Bluemix
 Cloud Foundry
 
 ## Prerequisites
-[Create an IBM Bluemix account](https://console.ng.bluemix.net/).  
-After that, please download the [Bluemix CLI.](http://clis.ng.bluemix.net/ui/home.html)    
-Make sure you run <kbd class="ph userinput">bx login</kbd> command and create the org and space for the demo.   
+[Create an IBM Bluemix account](https://cloud.ibm.com/).
+After that, please download the [Bluemix CLI.](https://cloud.ibm.com/docs/cli/index.html)
+Make sure you run <kbd class="ph userinput">bx login</kbd> command and create the org and space for the demo.
 
 ## Glossary and status messages
 Let's review some terms and status messages you're likely to encounter as you use Bluemix.
